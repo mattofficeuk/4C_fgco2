@@ -1,6 +1,7 @@
-**Summary of 4C analysis**
 
-_Matthew Menary, Paris le 27/7/2022_
+# Summary of 4C analysis
+
+Matthew Menary, Paris le 27/7/2022.
 
 This document summaries the progress I have made working in the 4C project, as well as where I think future analysis could go. It also provided links to the code and data.
 
@@ -12,13 +13,15 @@ https://github.com/mattofficeuk/4C_fgco2
 ```
 
 
-Data stored at: <code> /thredds/ipsl/mmenary/fgco2/</code></strong>
+Data stored at:` /thredds/ipsl/mmenary/fgco2/`
 
-**Abstract:**
+
+# Abstract:
 
 In order to improve our ability to predict the near-term evolution of climate, it may be important to accurately predict the evolution of atmospheric CO2, and thus carbon sinks. Following on from process-driven improvements of decadal predictions in physical oceanography, we focus on improving our understanding of the internal processes and variables driving CO2 uptake by the North Atlantic ocean. Specifically, we use the CMIP6 model IPSLCM6A to investigate the drivers of ocean-atmosphere CO2 flux variability in the North Atlantic subpolar gyre (NA SPG) on seasonal to decadal timescales. We find that DpCO2 (CO2 partial pressure difference between atmosphere and ocean) variability dominates over sea surface temperature (SST) and sea surface salinity (SSS) variability on all timescales within the NA SPG. Meanwhile, at the ice-edge, there are significant roles for both ice concentration and surface winds in driving the overall CO2 flux changes. Investigating the interannual DpCO2 variability further, we find that this variability is itself driven largely by variability in simulated mixed layer depths in the northern SPG. On the other hand, SSTs show an important contribution to DpCO2 variability in the southern SPG and on longer (decadal) timescales. Initial extensions into a multi-model context show similar results. By determining the key regions and processes important for skilful decadal predictions of ocean-atmosphere CO2 fluxes, we aim to both improve confidence in these predictions as well as highlight key targets for climate model improvement. 
 
-**Short summary of results:**
+
+# Short summary of results:
 
 
 
@@ -28,10 +31,24 @@ In order to improve our ability to predict the near-term evolution of climate, i
     2. It is mostly SST and mixed layer depths (MLD) in the North Atlantic subpolar gyre. Summer seems to be the important season. On annual timescales MLDs are most important, whereas on decadal timescales it is SSTs in the Labrador Sea.
 3. Follow up question 2: Are these variables (SSTs in the Labrador Sea; MLDs in the SPG) predictable in current generation annual-to-decadal prediction systems:
     3. Analysis ongoing, but it looks like “yes”
+4. Additional note: The above is true for IPSLCM6, and also ~10 other models that I tested (see presentation)
 
-**Code:**
 
-Notebooks
+# Future next steps:
+
+
+
+1. HadGEM3 DCPP data has been downloaded and processed on Jasmin. Unable to copy this to ciclad as 102Gb. Investigating methods...
+    1. Otherwise the raw data is accessible via ciclad _e.g._ `/bdd/CMIP6/DCPP/MOHC/HadGEM3-GC31-MM/dcppA-hindcast/...` but you will need to ask someone to download the `Omon` stream as only `Amon` is currently downloaded
+2. Use EN4 data to determine whether we have skill in MLD/SSTs in the correct regions and on what timescales. EN4 data available here: [https://www.metoffice.gov.uk/hadobs/en4/](https://www.metoffice.gov.uk/hadobs/en4/) 
+3. Compare results to CO2 forecast (Richard Betts): [https://www.metoffice.gov.uk/research/climate/seasonal-to-decadal/long-range/forecasts/co2-forecast](https://www.metoffice.gov.uk/research/climate/seasonal-to-decadal/long-range/forecasts/co2-forecast) 
+4. Combine seasonal analysis more thoroughly into annual-to-decadal predictions as likely very important
+
+
+# Code:
+
+
+### Notebooks
 
 
 <table>
@@ -94,10 +111,17 @@ See below for a batch script version of this.
 </table>
 
 
-(Batch) scripts:
+
+### (Batch) scripts:
 
 
 <table>
+  <tr>
+   <td><strong>File name</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
   <tr>
    <td><code>SUBMIT_*sh</code>
    </td>
