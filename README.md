@@ -28,9 +28,9 @@ In order to improve our ability to predict the near-term evolution of climate, i
 1. Scientific question: “What physical variables do we need to be able to reliably predict - if we want to make annual to decadal predictions of the air sea CO2 flux?”
     1. In the North Atlantic, it is dpCO2.
 2. Follow up question 1: What drives dpCO2 variability, and is it timescale dependent?
-    2. It is mostly SST and mixed layer depths (MLD) in the North Atlantic subpolar gyre. Summer seems to be the important season. On annual timescales MLDs are most important, whereas on decadal timescales it is SSTs in the Labrador Sea.
+    1. It is mostly SST and mixed layer depths (MLD) in the North Atlantic subpolar gyre. Summer seems to be the important season. On annual timescales MLDs are most important, whereas on decadal timescales it is SSTs in the Labrador Sea.
 3. Follow up question 2: Are these variables (SSTs in the Labrador Sea; MLDs in the SPG) predictable in current generation annual-to-decadal prediction systems:
-    3. Analysis ongoing, but it looks like “yes”
+    1. Analysis ongoing, but it looks like “yes”
 4. Additional note: The above is true for IPSLCM6, and also ~10 other models that I tested (see presentation)
 
 
